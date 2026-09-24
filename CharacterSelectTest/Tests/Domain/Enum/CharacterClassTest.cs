@@ -1,4 +1,7 @@
+using CharacterSelectTest.Application.Factory;
+using CharacterSelectTest.Domain.Character;
 using CharacterSelectTest.Domain.Enum;
+using System.Runtime.InteropServices;
 
 namespace CharacterSelectTest.Tests.Domain.Enum;
 
@@ -6,8 +9,8 @@ namespace CharacterSelectTest.Tests.Domain.Enum;
 public class CharacterClassTest
 {
     [TestMethod]
-    public void TestIsAbleToMakeNewInstance()
+    public void testingCharacterCreating()
     {
-        Assert.IsExactInstanceOfType<CharacterClass>(new CharacterClass());
+        CharacterFactory.Create(CharacterClass.Warrior, "name for warrior");
     }
 }

@@ -11,5 +11,8 @@ public sealed class Warrior : Entity.Character
         Strength = 14;
         Intelligence = 6;
         Agility = 8;
+        Mana = 100;
+        Evasion = 5;
+        Special = "tworzy aurę zadającą obrażenia";
     }
 }

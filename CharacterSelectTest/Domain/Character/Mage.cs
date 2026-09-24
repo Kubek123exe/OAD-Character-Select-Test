@@ -11,5 +11,8 @@ public sealed class Mage : Entity.Character
         Strength = 4;
         Intelligence = 16;
         Agility = 10;
+        Mana = 150;
+        Evasion = 2;
+        Special = "rzuca kulą ognia";
     }
 }
